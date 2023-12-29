@@ -6,7 +6,6 @@ TagManager:
   tags:
   - sample_capsule
   - Ground
-  - sparks
   layers:
   - Default
   - TransparentFX
