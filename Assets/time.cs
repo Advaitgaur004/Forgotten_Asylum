@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using Unity.VisualScripting;
+using UnityEngine.UI;
+using System;
+
+public class time : MonoBehaviour
+{
+    public static float global_time = 0f;
+    public static string playerName = "yyyy";
+    private string input;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        global_time += Time.deltaTime;
+        // set text as time in canvas
+        this.gameObject.GetComponent<TMP_Text>().text = "TIMER: " + Math.Round(global_time).ToString();
+    }
+
+}
