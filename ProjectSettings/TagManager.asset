@@ -7,6 +7,7 @@ TagManager:
   - sample_capsule
   - Ground
   - sparks
+  - sampletarget
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - sample_capsule_
+  - sampletargetlayer
   - ground_layer
   - 
   - 
