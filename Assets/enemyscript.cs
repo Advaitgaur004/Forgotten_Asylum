@@ -85,6 +85,7 @@ public class enemyscript : MonoBehaviour
 
     private void attackplayer()
     {
-        // Implement your attack logic here
+        enemyAnimator.SetTrigger("Attack");
+        agent.SetDestination(transform.position);
     }
 }
