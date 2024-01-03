@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class scene_change : MonoBehaviour
 {
     // Method to change the scene
-    void ChangeScene()
+    public void ChangeScene(string a)
     {
         // Load the next scene by its name
-        SceneManager.LoadScene("SceneName");
+        SceneManager.LoadScene("a");
     }
 }
