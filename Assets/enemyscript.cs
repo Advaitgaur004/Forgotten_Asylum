@@ -25,11 +25,13 @@ public class enemyscript : MonoBehaviour
     // animation
     public Animator enemyAnimator; // Reference to the Animator component for animation control
 
+    public BoxCollider boxCollider; // Reference to the BoxCollider component for collision detection
     private void Awake()
     {
         player = GameObject.FindWithTag("sampletarget").transform; // Use the tag "Player" for efficient player identification
         agent = GetComponent<NavMeshAgent>();
         enemyAnimator = GetComponent<Animator>();
+        boxCollider = GetComponentInChildren<BoxCollider>();
     }
 
     private void Update()
@@ -87,5 +89,22 @@ public class enemyscript : MonoBehaviour
     {
         enemyAnimator.SetTrigger("Attack");
         agent.SetDestination(transform.position);
+    }
+
+    private void EnableAttack()
+    {
+        boxCollider.enabled = true;
+    }
+    private void DisableAttack()
+    {
+        boxCollider.enabled = false;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "sampletarget")
+        {
+            // collision.gameObject.GetComponent<playerhealth>().TakeDamage(10);
+            print("HI");
+        }
     }
 }
