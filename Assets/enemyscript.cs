@@ -7,8 +7,9 @@ public class enemyscript : MonoBehaviour
     public NavMeshAgent agent;
     public Transform player;
     public LayerMask WhatIsGround, WhatIsPlayer;
-    public ParticleSystem freezeCircle; // Reference to the Freeze Circle particle system
+    // public ParticleSystem freezeCircle; // Reference to the Freeze Circle particle system
 
+    private float timer = 0.0f;
     // patroling
     public Vector3 walkpoint;
     bool walkpointset;
@@ -28,7 +29,7 @@ public class enemyscript : MonoBehaviour
     public BoxCollider boxCollider; // Reference to the BoxCollider component for collision detection
     private void Awake()
     {
-        player = GameObject.FindWithTag("sampletarget").transform; // Use the tag "Player" for efficient player identification
+        player = GameObject.FindWithTag("MainCamera").transform; // Use the tag "Player" for efficient player identification
         agent = GetComponent<NavMeshAgent>();
         enemyAnimator = GetComponent<Animator>();
         boxCollider = GetComponentInChildren<BoxCollider>();
@@ -39,7 +40,7 @@ public class enemyscript : MonoBehaviour
         playerinsightrange = Physics.CheckSphere(transform.position, sightrange, WhatIsPlayer);
         playerinattackrange = Physics.CheckSphere(transform.position, attackrange, WhatIsPlayer);
 
-        if (freezeCircle.isPlaying) // Check if the Freeze Circle particle system is playing
+        if (timer > 2.0f)
         {
             agent.enabled = true; // Enable the NavMeshAgent
             enemyAnimator.enabled = true; // Enable the Animator
@@ -48,7 +49,7 @@ public class enemyscript : MonoBehaviour
         {
             agent.enabled = false; // Disable the NavMeshAgent
             enemyAnimator.enabled = false; // Disable the Animator
-            return; // Exit the Update method if the Freeze Circle is not playing
+            timer += Time.deltaTime;
         }
 
         if (!playerinsightrange && !playerinattackrange) patroling();
@@ -101,7 +102,7 @@ public class enemyscript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "sampletarget")
+        if (collision.gameObject.tag == "MainCamera")
         {
             // collision.gameObject.GetComponent<playerhealth>().TakeDamage(10);
             print("HI");
