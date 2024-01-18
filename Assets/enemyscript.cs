@@ -49,7 +49,7 @@ public class enemyscript : MonoBehaviour
         playerinsightrange = Physics.CheckSphere(transform.position, sightrange, WhatIsPlayer);
         playerinattackrange = Physics.CheckSphere(transform.position, attackrange, WhatIsPlayer);
 
-        if (timer > 2.0f)
+        if (timer > 10.0f)
         {
             agent.enabled = true; // Enable the NavMeshAgent
             enemyAnimator.enabled = true; // Enable the Animator
