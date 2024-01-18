@@ -4,10 +4,6 @@ using UnityEngine.AI;
 
 public class enemyscript : MonoBehaviour
 {
-    public float maxHealth = 10000000.0f;
-    public float currentHealth;
-    public HealthBar healthBar;
-
     public NavMeshAgent agent;
     public Transform player;
     public LayerMask WhatIsGround, WhatIsPlayer;
@@ -31,18 +27,12 @@ public class enemyscript : MonoBehaviour
     public Animator enemyAnimator; // Reference to the Animator component for animation control
 
     public BoxCollider boxCollider; // Reference to the BoxCollider component for collision detection
-
-    private void Start()
-    {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-    }
     private void Awake()
     {
         player = GameObject.FindWithTag("MainCamera").transform; // Use the tag "Player" for efficient player identification
         agent = GetComponent<NavMeshAgent>();
         enemyAnimator = GetComponent<Animator>();
-        
+        boxCollider = GetComponentInChildren<BoxCollider>();
     }
 
     private void Update()
@@ -96,22 +86,26 @@ public class enemyscript : MonoBehaviour
         agent.SetDestination(player.position);
     }
 
-    float i = 0.0f;
     private void attackplayer()
     {
         enemyAnimator.SetTrigger("Attack");
-        if(i == 100) {
-            TakeDamage(2);
-            print("hi");
-            i = 0;
-        }
-        i++;
         agent.SetDestination(transform.position);
     }
 
-    private void TakeDamage(float  damage)
+    private void EnableAttack()
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        boxCollider.enabled = true;
+    }
+    private void DisableAttack()
+    {
+        boxCollider.enabled = false;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "MainCamera")
+        {
+            // collision.gameObject.GetComponent<playerhealth>().TakeDamage(10);
+            print("HI");
+        }
     }
 }
