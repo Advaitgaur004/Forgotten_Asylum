@@ -11,4 +11,14 @@ public class scene_change : MonoBehaviour
         // Load the next scene by its name
         SceneManager.LoadScene("a");
     }
+
+    public void starte()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void restart()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.SceneManagement;
 public class enemyscript : MonoBehaviour
 {
     public float maxHealth = 100.0f;
@@ -46,6 +46,10 @@ public class enemyscript : MonoBehaviour
 
     private void Update()
     {
+        if (currentHealth <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
         playerinsightrange = Physics.CheckSphere(transform.position, sightrange, WhatIsPlayer);
         playerinattackrange = Physics.CheckSphere(transform.position, attackrange, WhatIsPlayer);
 
