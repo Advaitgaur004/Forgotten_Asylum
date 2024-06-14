@@ -1,59 +1,78 @@
-# Inside-one
+# Forgotten Asylum
 
-# Escape room
+## Description
 
-Certainly! Here's a simple plot for a VR escape room game:
+"Forgotten Asylum" is a VR escape room game set in a mysterious and eerie abandoned asylum. Players must solve puzzles, navigate through dark corridors, and uncover the secrets of the asylum to escape.
 
----
+## Table of Contents
 
-**Title:** ***Forgotten Laboratory***
+1. [About the Project](#about-the-project)
+2. [Screenshots](#screenshots)
+3. [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+4. [Usage](#usage)
+5. [Features](#features)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
-**Setting:** A hidden underground laboratory belonging to Dr. Elias Thorn, located beneath his sprawling estate.
+## About the Project
 
-**Backstory:**
+"Forgotten Asylum" is inspired by classic horror themes and escape room puzzles. It combines immersive VR experiences with challenging puzzles and an engaging storyline. Developed using Unity3D, the game aims to provide a thrilling and immersive experience.
 
-Dr. Elias Thorn, a renowned scientist, was devastated by the untimely death of his beloved wife, Lillian. Consumed by grief and driven by desperation, Elias delved into forbidden alchemical research. He believed that he could resurrect Lillian and bring her back to life by harnessing the power of ancient chemicals.
+## Screenshots
 
-After years of secretive experiments, Elias developed a potent chemical serum. Ignoring the risks, he administered the serum to Lillian's preserved body. To his horror, the serum's intensity was far beyond his calculations. Lillian did not return to life as he had hoped. Instead, she mutated into a monstrous entity driven by primal instincts and aggression.
+![Screenshot1](link-to-screenshot1)
+![Screenshot2](link-to-screenshot2)
 
-Overwhelmed by guilt and fearing for his life, Elias managed to barricade himself in the laboratory's control room. Realizing the gravity of his mistake, he sent out a distress signal, hoping someone could help contain the mutated Lillian and prevent further catastrophe.
+## Getting Started
 
-**Gameplay:**
+### Prerequisites
 
-1. **Introduction**:
-    - Players receive Elias's distress signal and are tasked with navigating the labyrinthine laboratory to confront the mutated Lillian and save Elias (if possible).
-2. **Room 1 - The Alchemy Chamber**:
-    - Players encounter the first side villain, a failed experiment due to Elias's reckless research. This mutated creature is an initial challenge, requiring players to solve puzzles related to alchemical apparatus and chemical mixing.
-3. **Room 2 - The Mechanical Maze**:
-    - The second side villain awaits in this room—a mechanical monstrosity created from Elias's fusion of machinery and alchemy. Players must navigate a maze of gears, levers, and traps, solving mechanical puzzles to progress.
-4. **Room 3 - The Final Confrontation**:
-    - The climax of the game takes place here. Players confront the mutated Lillian, now a terrifying villain driven by instinctive rage. This room combines intense combat, evasion, and puzzle-solving as players attempt to subdue or contain Lillian.
-5. **Conclusion**:
-    - Multiple endings can be implemented depending on the players' actions and decisions. They may succeed in saving Elias or containing Lillian or face dire consequences based on their choices throughout the game.
+- Unity 3D (version 2021.1 or later)
+- VR headset (Oculus Rift, HTC Vive, etc.)
+- Git
 
-# Game-Mechanics
+### Installation
 
-Certainly! Game mechanics are crucial for providing interaction and engagement in VR games. Here are some game mechanics tailored to the storyline of ***The Forgotten Laboratory***:
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Advaitgaur004/Forgotten_Asylum.git
+    ```
+2. Open the project in Unity:
+    - Launch Unity Hub
+    - Click on "Add"
+    - Navigate to the cloned repository and select the folder
+    - Open the project
 
-1. **Interactive Inventory**:
-    - Players can collect items they find, such as the diary, vials, keys, blueprints, etc. These items are stored in a virtual inventory, which players can access anytime. The inventory allows for combining, examining, and using items.
-2. **Physical Interaction**:
-    - Players can physically interact with objects in the environment, like opening drawers, turning levers, mixing potions, and arranging equipment. This mechanic leverages the immersive nature of VR.
-3. **Puzzle Solving**:
-    - The game is filled with various puzzles that require players to use logic, observation, and trial and error. Puzzles can range from deciphering codes, arranging objects in a specific order, and aligning mirrors to mixing potions based on clues.
-4. **Hint System**:
-    - A hint system can be implemented to aid players who get stuck. Players can choose to receive hints at the cost of additional time added to their countdown.
-5. **Spatial Navigation**:
-    - Given the VR setting, players navigate the environment by physically moving (if using room-scale VR) or teleportation. The layout of the laboratory and the placement of puzzles should encourage exploration.
-6. **Time Pressure**:
-    - Introducing a countdown timer adds a sense of urgency and challenge. Players must solve puzzles and escape before time runs out. This mechanic increases tension and excitement.
-7. **Feedback Mechanisms**:
-    - Provide visual and auditory feedback when players interact with objects or solve puzzles. For example, a correct combination might trigger a sound, and a wrong move might produce a distinct noise or vibration.
-8. **Progress Tracking**:
-    - Implement a mechanism to track players' progress, such as a map of the laboratory or a checklist of tasks. This helps players stay organized and know their objectives.
-9. **Narrative Integration**:
-    - Integrate the story elements seamlessly into the gameplay. For instance, audio logs or diary entries can provide context, clues, or backstory as players progress.
-10. **Multi-layered Puzzles**:
-    - Some puzzles can have multiple steps or layers, where solving one part reveals another challenge. This keeps players engaged and provides a sense of accomplishment as they progress.
+## Usage
 
-By incorporating these game mechanics, ***The Forgotten Laboratory*** can offer players a compelling and immersive VR escape room experience, combining storytelling, exploration, and puzzle-solving
+- Launch the game in Unity.
+- Put on your VR headset.
+- Use the VR controllers to navigate and interact with the environment.
+- Solve puzzles and explore the asylum to find your way out.
+
+## Features
+
+- Immersive VR gameplay
+- Challenging puzzles and riddles
+- Atmospheric and eerie environment
+- Engaging storyline with multiple endings
+
+## Contributing
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Acknowledgments
+
+- Thanks to all the contributors and supporters.
+- Special thanks to the Unity community for their resources and support.
