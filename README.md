@@ -24,7 +24,7 @@ Embark on a harrowing journey in a labyrinthine laboratory where forbidden exper
 
 ## Screenshots
 
-![Screenshot1](link-to-screenshot1)
+![Screenshot1](https://github.com/Advaitgaur004/Forgotten_Asylum/blob/main/media/Screenshot%202024-06-14%20193548.png)
 ![Screenshot2](link-to-screenshot2)
 
 ## Getting Started
