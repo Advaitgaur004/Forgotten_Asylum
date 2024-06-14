@@ -3,6 +3,7 @@
 ## Description
 
 "Forgotten Asylum" is a VR escape room game set in a mysterious and eerie abandoned asylum. Players must solve puzzles, navigate through dark corridors, and uncover the secrets of the asylum to escape.
+Embark on a harrowing journey in a labyrinthine laboratory where forbidden experiments to resurrect a loved one go awry. Navigate puzzles, combat mutated entities, and unravel the consequences of grief and forbidden knowledge. Will you save a scientist from the monstrosity he inadvertently created?
 
 ## Table of Contents
 
@@ -73,6 +74,7 @@
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ##Contributers 
+-
 - Aditya Kedia
 - Advait Guar
 - Avinash Kumar
