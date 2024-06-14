@@ -73,7 +73,7 @@ Embark on a harrowing journey in a labyrinthine laboratory where forbidden exper
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-##Contributers 
+Contributers 
 -
 - Aditya Kedia (B22EE006)
 - Advait Guar (B22CS004)
