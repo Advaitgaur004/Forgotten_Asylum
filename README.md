@@ -22,7 +22,7 @@ Embark on a harrowing journey in a labyrinthine laboratory where forbidden exper
 
 "Forgotten Asylum" is inspired by classic horror themes and escape room puzzles. It combines immersive VR experiences with challenging puzzles and an engaging storyline. Developed using Unity3D, the game aims to provide a thrilling and immersive experience.
 
-## Screenshots
+## Images
 
 ![Screenshot1](https://github.com/Advaitgaur004/Forgotten_Asylum/blob/main/media/Screenshot%202024-06-14%20193548.png)
 ![Screenshot2](https://github.com/Advaitgaur004/Forgotten_Asylum/blob/main/media/Screenshot%202024-06-14%20193636.png)
