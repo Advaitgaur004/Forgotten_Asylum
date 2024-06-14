@@ -14,7 +14,7 @@ Embark on a harrowing journey in a labyrinthine laboratory where forbidden exper
     - [Installation](#installation)
 4. [Usage](#usage)
 5. [Features](#features)
-6. [Contributing](#contributing)
+6. [Contributers](#contributing)
 7. [License](#license)
 8. [Contact](#contact)
 
@@ -61,25 +61,19 @@ Embark on a harrowing journey in a labyrinthine laboratory where forbidden exper
 - Atmospheric and eerie environment
 - Engaging storyline with multiple endings
 
-## Contributing
+## Contributers
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-Contributers 
--
 - Aditya Kedia (B22EE006)
 - Advait Guar (B22CS004)
 - Avinash Kumar (B22ME014)
 - Swash Patwari (B22AI055)
   
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+Contributers 
+
 ## Acknowledgments
 
 - Thanks to all the contributors and supporters.
