@@ -75,10 +75,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ##Contributers 
 -
-- Aditya Kedia
-- Advait Guar
-- Avinash Kumar
-- Swash Patwari
+- Aditya Kedia (B22EE006)
+- Advait Guar (B22CS004)
+- Avinash Kumar (B22ME014)
+- Swash Patwari (B22AI055)
   
 ## Acknowledgments
 
