@@ -72,6 +72,12 @@
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+##Contributers 
+- Aditya Kedia
+- Advait Guar
+- Avinash Kumar
+- Swash Patwari
+  
 ## Acknowledgments
 
 - Thanks to all the contributors and supporters.
