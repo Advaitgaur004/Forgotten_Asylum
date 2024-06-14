@@ -1,7 +1,4 @@
 # Inside-one
-<center><p align = "center"> :star::star::star::star::star: </p> </center>
-
-***(initial draft 1)***
 
 # Escape room
 
